@@ -40,7 +40,6 @@ class Server {
     }
 
     sockets() {
-
         this.io.on('connection', socketController );
 
     }

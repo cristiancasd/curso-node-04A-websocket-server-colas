@@ -21,12 +21,10 @@ divAlerta.style.display='none'
 const socket = io();
 
 socket.on('connect', () => {
-    // console.log('Conectado');
     btnAtender.disabled = false;      //Servidor online activamos el boton
 });
 
 socket.on('disconnect', () => {
-    // console.log('Desconectado del servidor');
     btnAtender.disabled = true;       //Servidor offline desactivamos el boton
 });
 
@@ -45,12 +43,12 @@ btnAtender.addEventListener( 'click', () => {
     
     socket.emit( 'atender-ticket', {escritorio}, ( {ok,ticket,msg} ) => {  //emito evento al backend, el backend trae el metodo nuevo-ticket
         
-        if(!ok){                            //el backend me retorna ok si hay ticket por atender
+        if(!ok){  //el backend me retorna ok si hay ticket por atender
             lblTicket.innerText='nadie'     
             return divAlerta.style.display='';
         }
 
-        lblTicket.innerText='Ticket '+ ticket.numero     //muestro en el front        
+        lblTicket.innerText='Ticket '+ ticket.numero //muestro en el front        
         console.log('Desde el server', ticket );
     });
 });

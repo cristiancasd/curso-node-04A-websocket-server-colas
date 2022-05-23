@@ -1,15 +1,1 @@
-{
-  "ultimo": 14,                                        
-  "hoy": 23,
-  "tickets": [
-    { "numero": 12, "escritorio": null },
-    { "numero": 13, "escritorio": null },
-    { "numero": 14, "escritorio": null }
-  ],
-  "ultimos4": [
-    { "numero": 11, "escritorio": "Escritorio 1" },
-    { "numero": 10, "escritorio": "Escritorio 4" },
-    { "numero":  7, "escritorio": "Escritorio 3" },
-    { "numero":  5, "escritorio": "Escritorio 2" }
-  ]
-}
+{"ultimo":35,"hoy":23,"tickets":[{"numero":21,"escritorio":null},{"numero":22,"escritorio":null},{"numero":23,"escritorio":null},{"numero":24,"escritorio":null},{"numero":25,"escritorio":null},{"numero":26,"escritorio":null},{"numero":27,"escritorio":null},{"numero":28,"escritorio":null},{"numero":29,"escritorio":null},{"numero":30,"escritorio":null},{"numero":31,"escritorio":null},{"numero":32,"escritorio":null},{"numero":33,"escritorio":null},{"numero":34,"escritorio":null},{"numero":35,"escritorio":null}],"ultimos4":[{"numero":20,"escritorio":"Escritorio 5"},{"numero":17,"escritorio":"Escritorio2"},{"numero":13,"escritorio":"Escritorio1"},{"numero":12,"escritorio":"escritorio 4"}]}

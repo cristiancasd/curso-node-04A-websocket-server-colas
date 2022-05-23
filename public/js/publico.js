@@ -11,10 +11,7 @@ const lblEscritorio3  = document.querySelector('#lblEscritorio3');
 const lblTicket4      = document.querySelector('#lblTicket4');
 const lblEscritorio4  = document.querySelector('#lblEscritorio4');
 
-
 const socket = io();
-
-
 
 socket.on('estado-actual', (payload) => {
     
@@ -22,15 +19,10 @@ socket.on('estado-actual', (payload) => {
     //audio.play();
     
     const [ticket1, ticket2, ticket3, ticket4 ] = payload;
-
-    //const [ticket4, ticket3, ticket2, ticket1 ] = payload;
-    console.log('=============================');
-    
-    
+ 
     if(ticket1){
-        console.log('ticket1.escritorio ...',ticket1.escritorio)
-            lblTicket1.innerHTML     = 'Ticket '+ticket1.numero;
-            lblEscritorio1.innerHTML = ticket1.escritorio
+        lblTicket1.innerHTML     = 'Ticket '+ticket1.numero;
+        lblEscritorio1.innerHTML = ticket1.escritorio
     }   
     
     if(ticket2){
