@@ -1,1 +1,15 @@
-{"ultimo":160,"hoy":22,"tickets":[{"numero":140,"escritorio":null},{"numero":141,"escritorio":null},{"numero":142,"escritorio":null},{"numero":143,"escritorio":null},{"numero":144,"escritorio":null},{"numero":145,"escritorio":null},{"numero":146,"escritorio":null},{"numero":147,"escritorio":null},{"numero":148,"escritorio":null},{"numero":149,"escritorio":null},{"numero":150,"escritorio":null},{"numero":151,"escritorio":null},{"numero":152,"escritorio":null},{"numero":153,"escritorio":null},{"numero":154,"escritorio":null},{"numero":155,"escritorio":null},{"numero":156,"escritorio":null},{"numero":157,"escritorio":null},{"numero":158,"escritorio":null},{"numero":159,"escritorio":null},{"numero":160,"escritorio":null}],"ultimos4":[{"numero":139,"escritorio":"escritorio 2"},{"numero":138,"escritorio":"escritorio 2"},{"numero":137,"escritorio":"escritorio 2"},{"numero":136,"escritorio":"escritorio 2"}]}
+{
+  "ultimo": 14,                                        
+  "hoy": 23,
+  "tickets": [
+    { "numero": 12, "escritorio": null },
+    { "numero": 13, "escritorio": null },
+    { "numero": 14, "escritorio": null }
+  ],
+  "ultimos4": [
+    { "numero": 11, "escritorio": "Escritorio 1" },
+    { "numero": 10, "escritorio": "Escritorio 4" },
+    { "numero":  7, "escritorio": "Escritorio 3" },
+    { "numero":  5, "escritorio": "Escritorio 2" }
+  ]
+}

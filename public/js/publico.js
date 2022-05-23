@@ -18,16 +18,17 @@ const socket = io();
 
 socket.on('estado-actual', (payload) => {
     
-    const audio=new Audio('./audio/new-ticket.mp3');
-    audio.play();
+    //const audio=new Audio('./audio/new-ticket.mp3');
+    //audio.play();
     
     const [ticket1, ticket2, ticket3, ticket4 ] = payload;
 
     //const [ticket4, ticket3, ticket2, ticket1 ] = payload;
     console.log('=============================');
-    console.log('ticket1.escritorio ...',ticket1.escritorio)
+    
     
     if(ticket1){
+        console.log('ticket1.escritorio ...',ticket1.escritorio)
             lblTicket1.innerHTML     = 'Ticket '+ticket1.numero;
             lblEscritorio1.innerHTML = ticket1.escritorio
     }   

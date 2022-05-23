@@ -28,9 +28,6 @@ const socketController = (socket) => {
 
 
 
-
-
-
     socket.on('atender-ticket', ( payload, callback ) => {
        
         if(!payload.escritorio){              //payload es tipo Ticket, debe de tener numero y escritorio

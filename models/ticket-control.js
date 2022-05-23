@@ -67,16 +67,44 @@ class TicketControl{
 
         const ticket = this.tickets.shift(); //remueve el primer elemento del arreglo y lo retorna (se borra el ticket del arreglo ya que no está pendiente)
         ticket.escritorio=escritorio;        //es clase Ticket, tiene numero y escritorio
-        this.ultimos4.unshift(ticket)        //añadir un elemento nuevo al arreglo, al inicio (son los tickets en pantalla)
+
+
+        console.log('================================')
+        console.log(this.ultimos4)
+
+        this.ultimos4.forEach((escritorio, index) => {
+
+            console.log('index ',index, '  Escritorio ... ',escritorio.escritorio);
+            if(ticket.escritorio == escritorio.escritorio){   
+                console.log('en el condicional',escritorio.escritorio )            
+                this.ultimos4.splice(index,1);
+            }else{
+            }
+
+        });
+        this.ultimos4.unshift(ticket)        //añadir un elemento nuevo al arreglo, al inicio (son los tickets en pantalla)      
         
+        console.log(this.ultimos4)
+
         if(this.ultimos4.length>4){
             this.ultimos4.splice(-1,1)      //-1 es ultima posición del arreglo  y 1 es cortar un elemento 
         }
-
         this.guardarDB()
 
-        return ticket;
+        
+
+        console.log('escritorio del ultimo ticket ...'+ticket.escritorio)
+
+
+        return ticket;     
+
+
     }
+
+
+
+
+
 }
 
 module.exports=TicketControl
